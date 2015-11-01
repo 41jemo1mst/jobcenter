@@ -23,7 +23,7 @@ public class Account implements Serializable {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
   
-  private String name;
+  private String namea;
   
   private int age;
 
@@ -36,11 +36,11 @@ public class Account implements Serializable {
   }
 
   public String getName() {
-    return name;
+    return namea;
   }
 
   public void setName(String name) {
-    this.name = name;
+    this.namea = name;
   }
 
   public int getAge() {
