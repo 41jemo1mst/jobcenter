@@ -9,7 +9,6 @@ import de.hft.stuttgart.entities.Account;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.PersistenceContext;
 import org.junit.After;
 import static org.junit.Assert.*;
 import org.junit.Before;
@@ -21,18 +20,16 @@ import org.junit.Test;
  */
 public class PersistenceTest {
 
-//  EntityManagerFactory emf;
-//  EntityManager em;
+  EntityManagerFactory emf;
+  EntityManager em;
   Account account;
-  @PersistenceContext(unitName = "test")
-    private EntityManager em;
 
   @Before
   public void setUp() {
-//    emf = Persistence.createEntityManagerFactory("test");
-//    em = emf.createEntityManager();
+    emf = Persistence.createEntityManagerFactory("test");
+    em = emf.createEntityManager();
     account = new Account();
-//    em.getTransaction().begin();
+    em.getTransaction().begin();
   }
 
   @After
@@ -45,7 +42,7 @@ public class PersistenceTest {
     account.setName("Stanislaw");
     account.setAge(27);
     em.persist(account);
-//    em.getTransaction().commit();
+    em.getTransaction().commit();
 
   }
 
