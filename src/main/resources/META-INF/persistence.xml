@@ -6,9 +6,9 @@
     <class>de.hft.stuttgart.entities.Account</class>
     <properties>
       <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
-      <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/jobcenter"/>
-      <property name="hibernate.connection.username" value="postgres"/>
-      <property name="hibernate.connection.password" value="mondschein"/>
+      <property name="hibernate.connection.url" value="${db.connectionURL}"/>
+      <property name="hibernate.connection.username" value="${db.username}"/>
+      <property name="hibernate.connection.password" value="${db.password}"/>
       <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
       <property name="hibernate.hbm2ddl.auto" value="update"/>
       <property name="hibernate.show_sql" value="true"/>
@@ -20,9 +20,9 @@
     <class>de.hft.stuttgart.entities.Account</class>
     <properties>
       <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
-      <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/jobcenter"/>
-      <property name="hibernate.connection.username" value="postgres"/>
-      <property name="hibernate.connection.password" value="mondschein"/>
+      <property name="hibernate.connection.url" value="${db.connectionURL}"/>
+      <property name="hibernate.connection.username" value="${db.username}"/>
+      <property name="hibernate.connection.password" value="${db.password}"/>
       <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
       <property name="hibernate.hbm2ddl.auto" value="create"/>
       <property name="hibernate.show_sql" value="true"/>
