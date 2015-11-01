@@ -46,7 +46,7 @@ public class PersistenceTest {
     account.setAge(27);
     em.persist(account);
 //    em.getTransaction().commit();
-//Test
+
   }
 
 }
