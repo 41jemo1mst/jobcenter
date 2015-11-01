@@ -17,6 +17,7 @@
   </persistence-unit>
   <persistence-unit name="test" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <jta-data-source>java:/jboss/datasources/PostgreSQLDS</jta-data-source>
     <class>de.hft.stuttgart.entities.Account</class>
     <properties>
       <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
