@@ -30,12 +30,12 @@ public class PersistenceTest {
 //    emf = Persistence.createEntityManagerFactory("test");
 //    em = emf.createEntityManager();
     account = new Account();
-    em.getTransaction().begin();
+//    em.getTransaction().begin();
   }
 
   @After
   public void tearDown() {
-    em.close();
+//    em.close();
   }
 
   @Test
