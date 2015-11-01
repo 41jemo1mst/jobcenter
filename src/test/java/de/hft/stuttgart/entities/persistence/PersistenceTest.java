@@ -9,6 +9,7 @@ import de.hft.stuttgart.entities.Account;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.PersistenceUnit;
 import org.junit.After;
 import static org.junit.Assert.*;
 import org.junit.Before;
@@ -19,16 +20,15 @@ import org.junit.Test;
  * @author stanislawfreund
  */
 public class PersistenceTest {
-  
 
-  EntityManagerFactory emf;
+  @PersistenceUnit(unitName = "test")
   EntityManager em;
   Account account;
 
   @Before
   public void setUp() {
-    emf = Persistence.createEntityManagerFactory("test");
-    em = emf.createEntityManager();
+//    emf = Persistence.createEntityManagerFactory("test");
+//    em = emf.createEntityManager();
     account = new Account();
     em.getTransaction().begin();
   }
