@@ -20,7 +20,7 @@
     <class>de.hft.stuttgart.entities.Account</class>
     <properties>
       <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
-      <property name="hibernate.connection.url" value="${db.connectionURL}"/>
+      <property name="hibernate.connection.url" value="${db.local}"/>
       <property name="hibernate.connection.username" value="${db.username}"/>
       <property name="hibernate.connection.password" value="${db.password}"/>
       <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
