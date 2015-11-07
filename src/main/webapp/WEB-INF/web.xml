@@ -20,4 +20,8 @@
     <servlet-name>DynamicImageServlet</servlet-name>
     <url-pattern>/images/images/*</url-pattern>
   </servlet-mapping>
+  <context-param>
+    <param-name>primefaces.THEME</param-name>
+    <param-value>rocket</param-value>
+  </context-param>
 </web-app>
