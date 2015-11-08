@@ -11,7 +11,7 @@
         <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
         <title>Jobcenter</title>
       </f:facet>
-     <!-- CSS-->
+      <!-- CSS-->
       <h:outputStylesheet library="css" name="bootstrap.min.css"  />
       <h:outputStylesheet library="css" name="bootstrap.css"  />
       <h:outputStylesheet library="css" name="freelancer.css"  />
@@ -49,13 +49,13 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li class="page-scroll">
-                <a href="#search">Search</a>
+              <p:link value="Search" href="#search"/>
               </li>
               <li class="page-scroll">
-                <a href="#about">About US</a>
+              <p:link value="About US" href="#about"/>
               </li>
               <li class="page-scroll">
-                <a href="#impressum">Impressum</a>
+              <p:link value="Impressum" href="#impressum"/>
               </li>
             </ul>
           </div>
@@ -76,20 +76,23 @@
 
 
                 <div class="row control-group">
+
+                  <p class="help-block text-danger"></p>
+                  
+                  <p:inputText style="form-control" id="keywords" placeholder="Keywords" required="true" requiredMessage="Please provide a keyword for the Search"/>
+                                
                  
-                    <p class="help-block text-danger"></p>
-                    <input type="text" class="form-control" placeholder="Keywords"  id="keyword"/>
-                  
-                  
+
+
                 </div>
                 <div class="row control-group">
-                
-                    <p class="help-block text-danger"></p>
-                    <input type="text" class="form-control" placeholder="Location"  id="location"/>
-                    <p class="help-block text-danger"></p>
-                  </div>
-               
-                <p:commandButton value="Search" styleClass="medium success button button-float-left"/>
+
+                  <p class="help-block text-danger"></p>
+                  <p:inputText style="form-control" id="location" placeholder="Location"/>
+                  <p class="help-block text-danger"></p>
+                </div>
+
+                <p:button value="Search"  styleClass="medium success button button-float-left" outcome="navigateToSearchResult"/>
 
 
 
@@ -130,7 +133,7 @@
           </div>
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-              
+
             </div>
           </div>
         </div>
@@ -142,7 +145,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                Copyright &copy; HFT Software-Project WS 2015
+                Copyright &#169;  HFT Software-Project WS 2015
               </div>
             </div>
           </div>

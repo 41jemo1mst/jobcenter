@@ -184,11 +184,6 @@
       <artifactId>servlet-api</artifactId>
       <version>2.5</version>
     </dependency>
-    <dependency>
-      <groupId>org.primefaces.themes</groupId>
-      <artifactId>rocket</artifactId>
-      <version>1.0.6</version>
-    </dependency>
   </dependencies>
 
   <repositories>
