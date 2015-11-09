@@ -74,12 +74,12 @@
                 <hr class="test"/>
                 <p:graphicImage value="/resources/images/job.jpg" width="600" height="170" class="img-responsive img-centered"/>
 
-
+                <h:form>
                 <div class="row control-group">
 
                   <p class="help-block text-danger"></p>
                   
-                  <p:inputText style="form-control" id="keywords" placeholder="Keywords" required="true" requiredMessage="Please provide a keyword for the Search"/>
+                  <p:inputText style="form-control" id="keywords" value="#{jobBean.keyword}" placeholder="Keywords" required="true" requiredMessage="Please provide a keyword for the Search"/>
                                 
                  
 
@@ -88,13 +88,13 @@
                 <div class="row control-group">
 
                   <p class="help-block text-danger"></p>
-                  <p:inputText style="form-control" id="location" placeholder="Location"/>
+                  <p:inputText style="form-control" id="location" placeholder="Location" value="#{jobBean.location}"/>
                   <p class="help-block text-danger"></p>
                 </div>
 
-                <p:button value="Search"  styleClass="medium success button button-float-left" outcome="navigateToSearchResult"/>
+                <p:commandButton value="Search" styleClass="medium success button button-float-left" action="#{jobBean.findJobsByKeywordAndLocation()}"/>
 
-
+                </h:form>
 
               </div>
             </div>

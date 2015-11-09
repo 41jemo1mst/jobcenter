@@ -14,6 +14,15 @@
         </navigation-case>
     </navigation-rule>
      <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+          <from-action>#{jobBean.findJobsByKeywordAndLocation()}</from-action>
+            <from-outcome>searchResults</from-outcome> 
+            <to-view-id>/searchresults_filtering_jobcenter.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
         <from-view-id>/searchresults_filtering_jobcenter.xhtml</from-view-id>
         <navigation-case>
             <from-outcome>search</from-outcome> 
