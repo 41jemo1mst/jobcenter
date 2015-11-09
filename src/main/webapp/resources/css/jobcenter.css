@@ -12,3 +12,16 @@ and open the template in the editor.
   margin-left: 40px;
   color: #ffffff;
 }
+
+.search-button-color{
+  background-color: #444444 !important;
+  
+}
+
+.white-color{
+  color: #ffffff;
+}
+
+.grey-color{
+  color: #209edb;
+}

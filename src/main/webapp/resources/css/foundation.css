@@ -1178,8 +1178,7 @@ button, .button {
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
       color: #333333; }
   button.success, .button.success {
-    background-color: #43AC6A;
-    border-color: #368a55;
+    background-color: #6d6e72;
     color: #FFFFFF; }
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
       background-color: #368a55; }
@@ -3745,7 +3744,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  color: #222222;
+  color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
