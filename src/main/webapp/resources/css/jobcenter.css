@@ -15,7 +15,7 @@ and open the template in the editor.
 
 .search-button-color{
   background-color: #444444 !important;
-  
+
 }
 
 .white-color{
@@ -32,4 +32,16 @@ and open the template in the editor.
 
 .black-font{
   color:#000000;
+}
+
+.input-field-search{
+  margin-top: 8px;
+  float: left;
+  margin-left: -30px;
+}
+
+.input-field-location{
+  margin-top: 8px;
+  float: left;
+  margin-left: -30px;
 }
