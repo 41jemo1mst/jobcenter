@@ -20,6 +20,7 @@
       <h:outputStylesheet library="css" name="font-awesome.css"  />
       <h:outputStylesheet library="css" name="foundation.css"  />
       <h:outputStylesheet library="css" name="foundation.min.css"  />
+      <h:outputStylesheet library="css" name="jobcenter.css"/>
 
 
       <!--JS-->
@@ -46,21 +47,23 @@
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-              <p:graphicImage value="/resources/images/logo.jpg" class="img-responsive img-centered" width="100" height="100"/>
-              <div class="header-title">WorkForce</div>
+              <p:graphicImage value="/resources/images/logo.png" class="img-responsive img-centered" width="300" height="auto"/>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li class="page-scroll">
-                <p:link outcome="search" value="Search"/>
+                <p:link value="Search" outcome="search"/>
                 </li>
                 <li class="page-scroll">
-                <p:link outcome="about" value="About US"/>
+                <p:link value="Tag Cloud" outcome="tagcloud"/>
                 </li>
                 <li class="page-scroll">
-                <p:link outcome="impressum" value="Impressum"/>
+                <p:link value="About US" outcome="about"/>
+                </li>
+                <li class="page-scroll">
+                <p:link value="Impress" outcome="impressum"/>
                 </li>
               </ul>
             </div>
@@ -74,13 +77,13 @@
             <li class="sidebar-brand">
               <h3>Filters</h3>
             </li>
-            <li>
+            <li class="white-color">
               Payment
             </li>
-            <li>
+            <li class="white-color">
               Enddate
             </li>
-            <li>
+            <li class="white-color">
               Company
             </li>
           </ul>
@@ -93,7 +96,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <h:form>
-                  <h1>Results</h1>
+                  <h1 class="black-font">Results</h1>
 
                   <p:dataTable value="#{jobBean.foundJobs}" var="job">
                     <p:column headerText="Job Title">
@@ -120,7 +123,7 @@
 
       <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
       <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        <a class="btn btn-default" id="menu-toggle">F</a>
       </div>
 
       <!-- Footer -->
@@ -129,7 +132,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                Copyright  HFT Software-Project WS 2015
+                <div class="footer-color">Copyright &#169;  HFT Software-Project WS 2015</div>
               </div>
             </div>
           </div>
