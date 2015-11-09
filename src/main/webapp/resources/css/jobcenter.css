@@ -45,3 +45,15 @@ and open the template in the editor.
   float: left;
   margin-left: -30px;
 }
+
+.img-top{
+  margin-top: 0px;
+  float: left;
+  margin-left: -35px;
+}
+
+.img-filter{
+  margin-top: 9px;
+  float: left;
+  margin-left: -35px;
+}
